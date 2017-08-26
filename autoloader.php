@@ -24,4 +24,5 @@ function autoloader($class_name) {
     }
 }
 
+//load all record
 spl_autoload_register('autoloader');
