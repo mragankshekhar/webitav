@@ -1,0 +1,77 @@
+10
+
+dir
+0
+http://mssinfotch:90/svn/SJDA/ms-administration/img
+http://mssinfotch:90/svn/SJDA
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+5727dfe2-9ec7-d845-8c19-39767d651ae2
+
+patterns
+dir
+
+
+
+add
+
+avatars
+dir
+
+
+
+add
+
+form
+dir
+
+
+
+add
+
+logos
+dir
+
+
+
+add
+
+mapicons
+dir
+
+
+
+add
+
+favicon.ico
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

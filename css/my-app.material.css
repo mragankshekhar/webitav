@@ -1,0 +1,24 @@
+
+.theme-green .navbar-inner {
+    background-color: #4caf50;
+}
+.theme-black .navbar-inner {
+    background-color: #000;
+}
+.page-content{
+	padding-top: 0 !important;
+}
+.content-block {
+    margin: 57px 0;
+}
+
+.notification-item .item-title-row{
+	float: right;
+}
+.scroll100 .mss-navbar.navbar,.scroll100 .mss-navbar .mss-navbar-inner.navbar-inner {
+    background-color: transparent !important;
+	-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}

@@ -1,0 +1,147 @@
+10
+
+dir
+0
+http://mssinfotch:90/svn/SJDA/ms-administration/js
+http://mssinfotch:90/svn/SJDA
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+5727dfe2-9ec7-d845-8c19-39767d651ae2
+
+jquery.dataTables.min.js
+file
+
+
+
+add
+
+customizer.js
+file
+
+
+
+add
+
+jquery-te-1.4.0.min.js
+file
+
+
+
+add
+
+config.js
+file
+
+
+
+add
+
+jquery.cropbox.css
+file
+
+
+
+add
+
+contents.css
+file
+
+
+
+add
+
+custom.js
+file
+
+
+
+add
+
+jquery-ui.min.js
+file
+
+
+
+add
+
+jquery.form.js
+file
+
+
+
+add
+
+styles.js
+file
+
+
+
+add
+
+main.js
+file
+
+
+
+add
+
+charts.js
+file
+
+
+
+add
+
+analytics.js
+file
+
+
+
+add
+
+jquery.cropbox.js
+file
+
+
+
+add
+
+bootstrap.min.js
+file
+
+
+
+add
+
+jquery.min.js
+file
+
+
+
+add
+
+uniform.min.js
+file
+
+
+
+add
+

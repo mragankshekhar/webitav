@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /itav/
+
+# Begin cache control #
+ExpiresActive on
+ExpiresActive off
+<FilesMatch ".*">
+Header unset Cache-Control
+Header unset Expires
+Header unset Last-Modified
+FileETag None
+Header unset Pragma
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+# End cache control #
+DirectoryIndex index.php index.html

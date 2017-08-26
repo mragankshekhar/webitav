@@ -1,0 +1,147 @@
+10
+
+dir
+0
+http://mssinfotch:90/svn/SJDA/ms-administration/css
+http://mssinfotch:90/svn/SJDA
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+5727dfe2-9ec7-d845-8c19-39767d651ae2
+
+print.css
+file
+
+
+
+add
+
+responsive.css
+file
+
+
+
+add
+
+bootstrap.min.css
+file
+
+
+
+add
+
+pages.css
+file
+
+
+
+add
+
+boxed.css
+file
+
+
+
+add
+
+theme.css
+file
+
+
+
+add
+
+customizer.css
+file
+
+
+
+add
+
+custom.css
+file
+
+
+
+add
+
+animate.css
+file
+
+
+
+add
+
+jquery-ui-1.10.2.custom.css
+file
+
+
+
+add
+
+jquery-te.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+plugins.css
+file
+
+
+
+add
+
+sample.css
+file
+
+
+
+add
+
+jquery-te-1.4.0.css
+file
+
+
+
+add
+
+demo.css
+file
+
+
+
+add
+
+font-awesome.min.css
+file
+
+
+
+add
+

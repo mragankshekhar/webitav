@@ -1,0 +1,322 @@
+10
+
+dir
+0
+http://mssinfotch:90/svn/SJDA/ms-administration/manage
+http://mssinfotch:90/svn/SJDA
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+
+
+
+
+
+
+
+
+
+
+
+5727dfe2-9ec7-d845-8c19-39767d651ae2
+
+project_list_completed.php
+file
+
+
+
+add
+
+department.php
+file
+
+
+
+add
+
+myapproverecords.php
+file
+
+
+
+add
+
+approved_project.php
+file
+
+
+
+add
+
+approved.php.mine
+file
+
+
+
+add
+
+setting_social.php
+file
+
+
+
+add
+
+amountpending.php
+file
+
+
+
+add
+
+reject.php
+file
+
+
+
+add
+
+totalnof_project.php
+file
+
+
+
+add
+
+setting.php
+file
+
+
+
+add
+
+fund_head.php
+file
+
+
+
+add
+
+fundin_hand.php
+file
+
+
+
+add
+
+totalfund_inflow.php
+file
+
+
+
+add
+
+customize.php
+file
+
+
+
+add
+
+email_template.php
+file
+
+
+
+add
+
+setting_email.php
+file
+
+
+
+add
+
+admin_user.php
+file
+
+
+
+add
+
+ongoing_project.php
+file
+
+
+
+add
+
+totalnof_project_07-01-2016.php
+file
+
+
+
+add
+
+vendor_rejected_project.php
+file
+
+
+
+add
+
+totalnof_project_bk.php
+file
+
+
+
+add
+
+active_vendor.php
+file
+
+
+
+add
+
+contact.php
+file
+
+
+
+add
+
+vendor_new_project.php
+file
+
+
+
+add
+
+complete_project.php
+file
+
+
+
+add
+
+blacklisted_vendor.php
+file
+
+
+
+add
+
+totalexpenditure.php
+file
+
+
+
+add
+
+approved.php.r0
+file
+
+
+
+add
+
+amount_paid.php
+file
+
+
+
+add
+
+project_list.php
+file
+
+
+
+add
+
+approved.php.r3
+file
+
+
+
+add
+
+designation.php
+file
+
+
+
+add
+
+timeline.php
+file
+
+
+
+add
+
+roll.php
+file
+
+
+
+add
+
+calendar.php
+file
+
+
+
+add
+
+vendor_accepted_project.php
+file
+
+
+
+add
+
+manage_menu.php
+file
+
+
+
+add
+
+waitingfor_approval.php
+file
+
+
+
+add
+
+media.php
+file
+
+
+
+add
+
+approved.php
+file
+
+
+
+add
+
+total_paid.php
+file
+
+
+
+add
+
+totalnoof_vendor.php
+file
+
+
+
+add
+
