@@ -1,4 +1,5 @@
 // JavaScript Document
+loadForm()
 fetchCMS()	 
 setMyDetail(myDetail.fullname,myDetail.username,myDetail.avatar,myDetail.id)
 var mySwiper2 = myApp.swiper('.swiper-2', {
@@ -78,18 +79,30 @@ $$('.going-button').on('click',function(){
 	myApp.popup('#going-screen');
 })
 $$('.ms-closepop-first').on('click', function () {
-	myApp.closeModal("#going-screen")
-	myApp.popup('#going-screen-next');
-	getAutocomplete('autocomplete_to');
-	getAutocomplete('autocomplete_from');
+    myApp.closeModal("#going-screen")
+    myApp.popup('#going-screen-next');
+    getAutocomplete('autocomplete_to');
+    getAutocomplete('autocomplete_from');
 });
 $$('.ms-closepop-second').on('click', function () {
-	myApp.closeModal("#going-screen-next")
-	myApp.popup('#going-screen-second-next');
+    myApp.closeModal("#going-screen-next")
+    myApp.popup('#going-screen-second-next');
 });
+$$(".ms-closepop-second-next").on("click",function(){
+    myApp.closeModal("#going-screen-second-next")
+    $("#submitsearchbtn").click();
+})
 var calendarDisabled = myApp.calendar({
     input: '#calendar-disabled',
     dateFormat: 'M dd yyyy',
     rangePicker: true
 });
+
+$$(".placecontent a").on("click",function(){
+    $(this).parent("li").parent("ul").children("li").children("a").removeClass("active")
+    $(this).addClass("active")
+    $(this).parent("li").parent("ul").next("input").val($(this).html());
+})
+
+
 
