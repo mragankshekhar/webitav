@@ -1,71 +1,40 @@
 /* CSS Document */
 @font-face {
-  font-family: 'Framework7 Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Framework7Icons-Regular.eot");
-  src: url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
-       url("../fonts/Framework7Icons-Regular.woff") format("woff"),
-       url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
+    font-family: 'Framework7 Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Framework7Icons-Regular.eot");
+    src: url("../fonts/Framework7Icons-Regular.woff2") format("woff2"),
+        url("../fonts/Framework7Icons-Regular.woff") format("woff"),
+        url("../fonts/Framework7Icons-Regular.ttf") format("truetype");
 }
 .pac-container{
-	z-index: 99999;
+    z-index: 99999;
 }
-.toast-container {
-  position: fixed;
-  width: 150px;
-  left: 50%;
-  top: 50%;
-  padding: 0 15px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 15px;
-  z-index: 11800;
-  color: #fff;
-  font-size: 20px;
-  font-weight: normal;
-  font-family: 'Helvetica-Neue', 'HelveticaNeue', arial, sans-serif;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.8s;
-}
-
-.toast-container.show {
-  display: block;
-}
-
-.toast-container.fadein {
-  opacity: 1;
-}
-
-.toast-icon {
-  font-size: 85px;
-  text-align: center;
-}
-
-.toast-msg {
-  text-align: center;
-  font-weight: normal;
+.modal-title{line-height: 10px}
+.modal-title small {
+    font-size: 10px;
 }
 .f7-icons, .framework7-icons {
-  font-family: 'Framework7 Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 25px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  font-feature-settings: "liga";
-  text-align: center;
+    font-family: 'Framework7 Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    text-align: center;
 }
 img.logo {
     max-height: 100%;
@@ -125,11 +94,11 @@ i.icon.icon-exit {
     text-align: center;
 }
 img{
-	max-height: 100%;
-	max-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 .nav.nav-tabs li a{
-	padding: 1.7rem 2px !important;
+    padding: 1.7rem 2px !important;
 }
 a.ms-social {
     padding: 10px 20px;
@@ -154,38 +123,38 @@ img#avatar {
     height: 30vw;
     background-size: cover;
     background-position: center;
- }
- .index-header>a {
-     display: block;
-     line-height: 0;
- }
-.index-header>p{
-	height: 40px;
 }
- .ms-btn-where>a {
-     border: 1px solid #999;
-     display: inline-block;
-     padding: 5px 30px;
-     background-color: #eee;
- }
+.index-header>a {
+    display: block;
+    line-height: 0;
+}
+.index-header>p{
+    height: 40px;
+}
+.ms-btn-where>a {
+    border: 1px solid #999;
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: #eee;
+}
 .scroll100 .navbar .ms-btn-where>a{display:none}
 .navbar .ms-btn-where>a {
     padding: 0px 13px;
     line-height: 35px;
     font-size: 15px;
 }
- .swiper-slide {
-   background: #fff;
-   box-sizing: border-box;
-   border: 1px solid #ccc;
- }
- .swiper-slide div {
-   margin: 0px;
-   font-size:12px;
- }
- .toolbar-inner.footer-link{
+.swiper-slide {
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.swiper-slide div {
+    margin: 0px;
+    font-size:12px;
+}
+.toolbar-inner.footer-link{
     margin-top:20px;
- }
+}
 
 .button-group {
     border: 1px solid #ccc;
@@ -203,7 +172,7 @@ button.gdivs {
 }
 input.gdivs {
     width: 42%;
-	text-align: center;
+    text-align: center;
 }
 .nextGoing .item-input {
     border: 1px solid #ccc;
