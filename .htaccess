@@ -1,7 +1,8 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /itav/
-
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
 # Begin cache control #
 # ExpiresActive on
 # ExpiresActive off
