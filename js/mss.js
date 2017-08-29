@@ -151,7 +151,12 @@ function setLatLang(lat_p,long_p){
 
     })
 }
+function setReg_id(reg_id){
+   $$(".reg_id").val(reg_id);
+   $.getJSON("api/common.php",{"type":"update-reg_id","reg_id":reg_id},function(data){
 
+   })
+}
 function setLanguage(language){
    $$(".lang").val(language);
    lang=language;
