@@ -35,10 +35,14 @@ myApp.onPageInit('*', function (page) {
             getPageDetail('Privacypolicy');
        }else if(page.name=="terms_of_uses"){
             getPageDetail('TermsofUses');
+       }else if(page.name=="userprofile"){
+           var id = page.query.id;
+           ImportJs("js/userprofile.js");
        }else if(page.name=="index"){
                   ImportJs("js/index.js");
        }
  });
+
  function loadForm(){
      var progressbar     = $('#progressbar');
         var statustxt       = $('#progresstext');
