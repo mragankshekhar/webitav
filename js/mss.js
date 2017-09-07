@@ -24,25 +24,42 @@ myApp.onPageInit('*', function (page) {
        }else if(page.name=="about"){
             getPageDetail('Aboutus');
        }else if(page.name=="service"){
-            getPageDetail('Services');
+            
        }else if(page.name=="faq"){
             getPageDetail('faq');
        }else if(page.name=="setting"){
 
        }else if(page.name=="feedback"){
-
+           getPageDetail('feedback');
        }else if(page.name=="privacy_policy"){
             getPageDetail('Privacypolicy');
        }else if(page.name=="terms_of_uses"){
             getPageDetail('TermsofUses');
        }else if(page.name=="userprofile"){
            var id = page.query.id;
-           ImportJs("js/userprofile.js");
+           getprofile(id)
        }else if(page.name=="index"){
-                  ImportJs("js/index.js");
+           ImportJs("js/index.js");
+       }else if(page.name=="chat"){
+           var id = page.query.id;
+           $$("#uid").val(id);
+            ImportJs("js/chat.js")
        }
  });
-
+function getprofile(id){
+    $.getJSON("api/profile.php",{"type":"fetch-profile","id":id},function(data){
+        console.log(data)
+        $("#u_uname").val(data.fullname);
+        $("#u_username").html(data.username);
+        $("#u_email").val(data.email);
+        $("#u_phone").val(data.mobile);
+        $("#u_gender").val(data.gender);
+        $("#u_dob").val(data.dob);
+        $("#chaticon").attr("href","chat.html?id="+id)
+        if(data.is_public=="1")$("#is_public").attr("checked","checked");
+        $("#u_avatar").attr("src","uploads/avatar/"+data.avatar);
+    })
+}
  function loadForm(){
      var progressbar     = $('#progressbar');
         var statustxt       = $('#progresstext');
