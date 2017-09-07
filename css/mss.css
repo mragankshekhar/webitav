@@ -11,7 +11,7 @@
 .pac-container{
     z-index: 99999;
 }
-.modal-title{line-height: 10px}
+.modal-title{line-height: 15px !important}
 .modal-title small {
     font-size: 10px;
 }
@@ -185,3 +185,6 @@ input.gdivs {
 }
 .gdivs.left{border-right: 1px solid #ccc;}
 .gdivs.right{border-left: 1px solid #ccc;}
+.toolbar.messagebar~.page-content {
+    padding-bottom: 150px;
+}
