@@ -2,12 +2,6 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /itav/
 
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ http://www.{HTTP_HOST}/$1 [L,R=301]
-
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://www.{HTTP_HOST}/$1 [L,R=301]
-
 # Begin cache control #
 # ExpiresActive on
 # ExpiresActive off
@@ -21,3 +15,11 @@ RewriteRule ^(.*)$ https://www.{HTTP_HOST}/$1 [L,R=301]
 # </FilesMatch>
 # End cache control #
 DirectoryIndex index.php index.html
+
+<IfModule mod_security.c>
+    # Turn off mod_security filtering.  SMF is a big boy, it does not need its hands held.
+    SecFilterEngine Off
+
+    # The below probably isn't needed, but better safe than sorry.
+    SecFilterScanPOST Off
+</IfModule>
