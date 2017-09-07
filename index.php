@@ -97,10 +97,20 @@ if (!isset($_SESSION["user"]["uid"]) || $_SESSION["user"]["uid"] == "") {
                             <div class="item-content">
                                 <div class="item-media"><i class="icon icon-nav icon-exit"></i></div>
                                 <div class="item-inner">
-                                    <div class="item-title"><span data-lang="EXIT">Logout</span> </div>
+                                    <div class="item-title"><span data-lang="LOGOUT">Logout</span> </div>
                                 </div>
                             </div></a></li>
                 </ul>
+            </div>
+        </div>
+        <!-- Right Panel with Cover effect -->
+        <div class="panel panel-right panel-cover">
+            <div class="content-block">
+                <p>Right Panel content here</p>
+                <!-- Click on link with "close-panel" class will close panel -->
+                <p><a href="#" class="close-panel">Close me</a></p>
+                <!-- Click on link with "open-panel" and data-panel="left" attribute will open Left panel -->
+                <p><a href="#" data-panel="left" class="open-panel">Open Left Panel</a></p>
             </div>
         </div>
 
@@ -122,6 +132,9 @@ if (!isset($_SESSION["user"]["uid"]) || $_SESSION["user"]["uid"] == "") {
 
                 <div class = "pages navbar-through toolbar-through">
                     <div data-page = "index" class = "page">
+                        <a href="#" data-panel="right" class="open-panel floating-button " style="margin-bottom: 47px;">
+                            <i class="f7-icons">chats_fill</i>
+                        </a>
                         <div class = "page-content">
                             <div class="index-header">
                                 <p class="ms-btn-where"><a href="#" class="link going-button">Where are you going...</a></p>
@@ -208,6 +221,13 @@ if (!isset($_SESSION["user"]["uid"]) || $_SESSION["user"]["uid"] == "") {
                                                 <div style="background-image:url(img/places1.jpg);" valign="bottom" class="card-header color-white no-border">Barbate, Spain</div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="content-block-title">Nearest Users</div>
+                                <div class="swiper-container swiper-user">
+                                    <div class="swiper-wrapper" id="ulist">
+
                                     </div>
                                 </div>
                                 <br/>
