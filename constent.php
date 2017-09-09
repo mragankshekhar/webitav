@@ -1,12 +1,14 @@
 <?php
+
 /* * ***********language connect************ */
-//print_r($_SESSION);exit;
-$lang = '';$_SESSION['lang_set']=0;
+//echo "<pre>";print_r($_SESSION);print_r($_COOKIE);exit;
+$lang = '';
+$_SESSION['lang_set'] = 0;
 if (isset($_GET['lang']) && $_GET['lang'] != "") {
     $lang = $_GET['lang'];
 } else if (isset($_SESSION['lang']) && $_SESSION['lang'] != "") {
     $lang = $_SESSION['lang'];
-	$_SESSION['lang_set']=1;
+    $_SESSION['lang_set'] = 1;
 } else if (isset($_COOKIE['lang']) && $_COOKIE['lang'] != "") {
     $lang = $_COOKIE['lang'];
 } else {
@@ -32,26 +34,32 @@ $_SESSION["cur"] = $cur;
 setcookie('cur', $cur, time() + (3600 * 24 * 30));
 /* * ***********currency connect************ */
 /* * ***********userid and password connect************ */
-$username = $password = ""; $myDetail=array();
+$username = $password = "";
+$myDetail = array();
 if (isset($_SESSION["user"]["uid"]) && $_SESSION["user"]["uid"] != "") {
-	$myDetail=$user->myDetail($_SESSION["user"]["uid"]);
+    $myDetail = $user->myDetail($_SESSION["user"]["uid"]);
 } else if (isset($_COOKIE['userid']) && $_COOKIE['userid'] != "") {
-    $myDetail=$user->myDetail($_COOKIE['userid']);
-	$_SESSION["user"]["uid"]=$_COOKIE['userid'];
-} 
+    $myDetail = $user->myDetail($_COOKIE['userid']);
+    $_SESSION["user"]["uid"] = $_COOKIE['userid'];
+}
 /* * ***********userid and password connect************ */
-/* * ***********currency connect************ */
+/* * ***********lat long connect************ */
 $lat = $long = "";
 if (isset($_GET["lat"]) && $_GET["lat"] != "") {
-    $lat = $_GET["lat"];$long = $_GET["long"];
+    $lat = $_GET["lat"];
+    $long = $_GET["long"];
 } elseif (isset($_SESSION["lat"]) && $_SESSION["lat"] != "") {
-    $lat = $_GET["lat"];$long = $_GET["long"];
+    $lat = $_GET["lat"];
+    $long = $_GET["long"];
 } else if (isset($_COOKIE['lat']) && $_COOKIE['lat'] != "") {
-   $lat = $_GET["lat"];$long = $_GET["long"];
+    $lat = $_GET["lat"];
+    $long = $_GET["long"];
 }
-$_SESSION["lat"] = $lat;$_SESSION["long"] = $long;
-setcookie('lat', $lat, time() + (3600 * 24 * 30));setcookie('long', $long, time() + (3600 * 24 * 30));
-/* * ***********currency connect************ */
+$_SESSION["lat"] = $lat;
+$_SESSION["long"] = $long;
+setcookie('lat', $lat, time() + (3600 * 24 * 30));
+setcookie('long', $long, time() + (3600 * 24 * 30));
+/* * ***********lat long connect************ */
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

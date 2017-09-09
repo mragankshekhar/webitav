@@ -122,7 +122,7 @@ if (!isset($_SESSION["user"]["uid"]) || $_SESSION["user"]["uid"] == "") {
                             <a href = "#" class = "link icon-only open-panel"><i class = "icon icon-bars"></i></a>
                         </div>
                         <div class="center">
-                            <p class="ms-btn-where"><a href="#" style="height: 36px; color: #000;" class="link going-button">Where are you going...</a></p>
+                            <p class="ms-btn-where"><a href="#" style="height: 36px; color: #000;" class="link going-button" data-lang="WHERE_ARE_YOU">Where are you going...</a></p>
                         </div>
                         <div class = "right">
                             <span class="right-top-icon"><i class="icon icon-nav icon-map"></i></span>
@@ -359,7 +359,7 @@ if (!isset($_SESSION["user"]["uid"]) || $_SESSION["user"]["uid"] == "") {
             <input type="submit" id="submitsearchbtn" value="ok" class="hide">
         </form>
         <?php
-        include("include/mss_footer.php");
+                include("include/mss_footer.php");
         ?>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
