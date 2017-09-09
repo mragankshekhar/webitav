@@ -1,4 +1,5 @@
 <?php
+
 ob_start();
 @session_start();
 $varAdminFolder = "ms-administration";
@@ -25,6 +26,14 @@ if ($_SERVER["SERVER_NAME"] === "mssinfotech.in" || $_SERVER["SERVER_NAME"] === 
     define("DIRECTORY", "/MVP/api/");
     define("URL_ROOT", "http://localhost" . DIRECTORY);
 }
+
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off") {
+    $redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $redirect);
+    exit();
+}
+
 //print_r($_SESSION);exit;
 $table_prefix = "mss_";
 define("TABLE_PREFIX", $table_prefix);
@@ -33,7 +42,7 @@ define("PATH_ROOT", dirname(__FILE__));
 define("PATH_LIB", PATH_ROOT . DS . "function" . DS);
 include_once PATH_ROOT . DS . 'autoloader.php';
 
-ini_set( "short_open_tag", 1 );
+ini_set("short_open_tag", 1);
 $db = new MySqlDb($database_host, $mysql_user, $password, $database);
 $user = new user();
 /* * ************************-----setup my framework start-------********************** */
@@ -41,7 +50,7 @@ $theme = "version";
 $mss = new mss($theme);
 $mss->set_error(false);
 $mss->setReporting();
-$visit=$mss->addVisit(false);
+$visit = $mss->addVisit(false);
 /* * ************************-----setup my framework start-------********************** */
 require_once(PATH_LIB . 'mailer/PHPMailerAutoload.php');
 require_once(PATH_LIB . "table.php");
